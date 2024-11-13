@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes slide {
+      from {
+        transform: translateX(100px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      animation: slide 5s ease-in-out;
+    }
+
+    .animated-box1 {
+      width: 50px;
+      height: 30px;
+      background-color: rgb(15, 224, 179);
+      animation: slide 10s ease-in-out;
+    }
+  </style>
+  <title>CSS Animation Example</title>
+</head>
+<body>
+  <div class="animated-box">
+    
+  </div>
+  <h1 class="animated-box1">hi</h1>
+</body>
+</html>
