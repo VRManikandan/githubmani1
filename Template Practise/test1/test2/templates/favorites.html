@@ -1,0 +1,18 @@
+<!-- favorites.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+</head>
+<body>
+    <h1>My Favorite Items</h1>
+    <ul>
+        {% for item in favorites %}
+            <li>{{ item }}</li>
+        {% endfor %}
+    </ul>
+    <p><a href="{% url 'welcome' %}">Go back to welcome page</a></p>
+</body>
+</html>
